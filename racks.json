@@ -1,0 +1,194 @@
+[
+    {
+        "name" : "cord-rack-1",
+        "description" : "",
+        "components" : [
+            {
+                "name" : "fabric-1",
+                "type" : "leaf",
+                "manufacturer" : "accton",
+                "model" : "5712",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "ma1",
+                    "address" : "10.0.0.1"
+                }
+            },
+            {
+                "name" : "fabric-2",
+                "type" : "leaf",
+                "manufacturer" : "accton",
+                "model" : "5712",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "ma1",
+                    "address" : "10.0.0.2"
+                }
+            },
+            {
+                "name" : "cord-r1-s1",
+                "type" : "head",
+                "manufacturer" : "quanta",
+                "model" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.3"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            },
+            {
+                "name" : "cord-r1-s2",
+                "type" : "compute",
+                "manufacturer" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.4"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            },
+            {
+                "name" : "cord-r1-s3",
+                "type" : "compute",
+                "manufacturer" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.5"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            },
+            {
+                "name" : "cord-r1-s4",
+                "type" : "compute",
+                "manufacturer" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.6"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            }
+        ]
+    },
+    {
+        "name" : "cord-rack-2",
+        "description" : "",
+        "components" : [
+            {
+                "name" : "spine-1",
+                "type" : "spine",
+                "manufacturer" : "accton",
+                "model" : "6712",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "ma1",
+                    "address" : "10.0.0.1"
+                }
+            },
+            {
+                "name" : "spine-2",
+                "type" : "spine",
+                "manufacturer" : "accton",
+                "model" : "5712",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "ma1",
+                    "address" : "10.0.0.2"
+                }
+            },
+            {
+                "name" : "leaf-1",
+                "type" : "leaf",
+                "manufacturer" : "accton",
+                "model" : "6712",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "ma1",
+                    "address" : "10.0.0.1"
+                }
+            },
+            {
+                "name" : "leaf-2",
+                "type" : "leaf",
+                "manufacturer" : "accton",
+                "model" : "5712",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "ma1",
+                    "address" : "10.0.0.2"
+                }
+            },
+            {
+                "name" : "cord-r2-s1",
+                "type" : "head",
+                "manufacturer" : "quanta",
+                "model" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.3"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            },
+            {
+                "name" : "cord-r2-s2",
+                "type" : "compute",
+                "manufacturer" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.4"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            },
+            {
+                "name" : "cord-r2-s3",
+                "type" : "compute",
+                "manufacturer" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.5"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            },
+            {
+                "name" : "cord-r2-s4",
+                "type" : "compute",
+                "manufacturer" : "unknown",
+                "management" : {
+                    "mac" : "",
+                    "interface" : "eth0",
+                    "address" : "10.0.0.6"
+                },
+                "power" : {
+                    "mac" : "",
+                    "address" : ""
+                }
+            }
+        ]
+    }
+]
