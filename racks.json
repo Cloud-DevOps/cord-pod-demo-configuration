@@ -2,6 +2,12 @@
     {
         "name" : "cord-rack-1",
         "description" : "",
+        "domain" : "cord.lab",
+        "bridge" : "mgmtbr",
+        "networks" : {
+            "local" : "10.1.0./16",
+            "host"  : "172.18.0.0/16"
+        },
         "components" : [
             {
                 "name" : "top-of-rack-1",
@@ -150,6 +156,12 @@
     {
         "name" : "cord-rack-2",
         "description" : "",
+        "domain" : "cord.lab",
+        "bridge" : "mgmtbr",
+        "networks" : {
+            "local" : "10.2.0./16",
+            "host"  : "172.18.0.0/16"
+        },
         "components" : [
             {
                 "name" : "top-of-rack-2",
@@ -217,7 +229,7 @@
                 "networks" : {
                     "management" : {
                         "mac" : "",
-                        "interface" : "eth0",
+                        "interface" : "eth0:1",
                         "address" : "10.2.0.1"
                     },
                     "power" : {
