@@ -217,7 +217,7 @@
                     "management" : {
                         "mac" : "cc:37:ab:7c:ba:da",
                         "interface" : "ma1",
-                        "address" : "10.2.20.1"
+                        "address" : "10.2.20.2"
                     }
                 }
             },
