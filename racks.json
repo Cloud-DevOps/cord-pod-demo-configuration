@@ -229,7 +229,7 @@
                 "networks" : {
                     "management" : {
                         "mac" : "00:25:90:fa:5f:58",
-                        "interface" : "eth0:1",
+                        "interface" : "em1:1",
                         "address" : "10.2.0.1"
                     },
                     "power" : {
