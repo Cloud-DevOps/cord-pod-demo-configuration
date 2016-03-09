@@ -65,7 +65,8 @@
                     "power" : {
                         "mac" : "00:00:00:00:00:00",
                         "address" : "10.1.10.1"
-                    }
+                    },
+                    "fabric" : []
                 }
             },
             {
@@ -82,7 +83,19 @@
                     "power" : {
                         "mac" : "2c:60:0c:e3:c4:2f",
                         "address" : "10.1.10.2"
-                    }
+                    },
+                    "fabric" : [
+                        {
+                            "interface" : "eth2",
+                            "mac" : "68:05:ca:30:00:00",
+                            "address" : "10.4.2.1"
+                        },
+                        {
+                            "interface" : "eth3",
+                            "mac" : "68:05:ca:30:00:01",
+                            "address" : "10.4.2.2"
+                        }
+                    ]
                 }
             },
             {
@@ -99,7 +112,19 @@
                     "power" : {
                         "mac" : "2c:60:0c:cb:00:f1",
                         "address" : "10.1.10.3"
-                    }
+                    },
+                    "fabric" : [
+                        {
+                            "interface" : "eth2",
+                            "mac" : "i68:05:ca:30:03:99",
+                            "address" : "10.4.3.1"
+                        },
+                        {
+                            "interface" : "eth3",
+                            "mac" : "68:05:ca:30:03:99",
+                            "address" : "10.4.3.2"
+                        }
+                    ]
                 }
             },
             {
@@ -116,7 +141,19 @@
                     "power" : {
                         "mac" : "2c:60:0c:cb:00:3d",
                         "address" : "10.1.10.4"
-                    }
+                    },
+                    "fabric" : [
+                        {
+                            "interface" : "eth2",
+                            "mac" : "68:05:ca:30:05:60",
+                            "address" : "10.4.4.1"
+                        },
+                        {
+                            "interface" : "eth3",
+                            "mac" : "68:05:ca:30:00:01",
+                            "address" : "10.4.4.2"
+                        }
+                    ]
                 }
             }
         ],
