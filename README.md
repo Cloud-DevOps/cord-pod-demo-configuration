@@ -64,42 +64,34 @@ __NOTE:__ _only a single instance of the fabric can be run at a time, thus if mu
     - The switches should come up clear, i.e. no error messages. If this is not the case then something is wrong and you likely have to start over from the beginning. __The solution does not recover from errors well and typically means a complete restart of the process.__
     - Verify that the flows have been pushed to the switches. You can do this via the ONOS CLI command `flows pending_add`.
 
-        ```
-        onos> flows pending_add
-        deviceId=of:0000000000000011, flowRuleCount=0
-        deviceId=of:0000000000000012, flowRuleCount=0
-        deviceId=of:0000000000000021, flowRuleCount=0
-        deviceId=of:0000000000000022, flowRuleCount=0
-        ```
+            onos> flows pending_add
+            deviceId=of:0000000000000011, flowRuleCount=0
+            deviceId=of:0000000000000012, flowRuleCount=0
+            deviceId=of:0000000000000021, flowRuleCount=0
+            deviceId=of:0000000000000022, flowRuleCount=0
 
     You can view the number of flows pushed to each device using the `flows -c` command for flow count.
 
-        ```
-        onos> flows -c
-        deviceId=of:0000000000000011, flowRuleCount=14
-        deviceId=of:0000000000000012, flowRuleCount=14
-        deviceId=of:0000000000000021, flowRuleCount=39
-        deviceId=of:0000000000000022, flowRuleCount=35
-        ```
+            onos> flows -c
+            deviceId=of:0000000000000011, flowRuleCount=14
+            deviceId=of:0000000000000012, flowRuleCount=14
+            deviceId=of:0000000000000021, flowRuleCount=39
+            deviceId=of:0000000000000022, flowRuleCount=35
 
     __NOTE:__ _I would have expected that `of:22` and `of:21` would have had the same count, this is a concern._
 4. Ping Away
     - At this point you should be able to `ssh` to one of the hosts in the POD and ping to the other over the fabric. For example if you are on `cord-r1-s4` your should be able to `ping` host `cord-r2-s4`'s fabric address of `10.3.2.2`. The fabric IPs for hosts are:
-        ```
-        cord-r2-s1 : 10.3.1.1
-        cord-r2-s2 : 10.3.1.2
-        cord-r2-s3 : 10.3.2.1
-        cord-r2-s4 : 10.3.2.2
-        ```
+
+            cord-r2-s1 : 10.3.1.1
+            cord-r2-s2 : 10.3.1.2
+            cord-r2-s3 : 10.3.2.1
+            cord-r2-s4 : 10.3.2.2
+
 5. When things go wrong, and they will
     - A useful debugging tool is to increase the debug log output for segment routing in ONOS. This can be done from the ONOS command line prompt:
 
-        ```
-        onos> log:set TRACE org.onosproject.segmentrouting
-        ```
+            onos> log:set TRACE org.onosproject.segmentrouting
 
     After setting this value you can tail the log to see additional information as ping requests are made:
-    
-        ```
-        onos> log:tail
-        ```
+
+            onos> log:tail
