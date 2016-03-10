@@ -208,7 +208,7 @@
         "bridge" : "mgmtbr",
         "networks" : {
             "local" : "10.2.0.0/16",
-            "host"  : "172.18.0.0/16"
+            "host" : "172.18.0.0/16"
         },
         "components" : [
             {
@@ -227,6 +227,9 @@
                         "mac" : "cc:37:ab:7c:be:68",
                         "interface" : "ma1",
                         "address" : "10.2.30.1"
+                    },
+                    "fabric" : {
+                        "of-datapath-id" : "0x0000000000000011"
                     }
                 }
             },
@@ -240,6 +243,9 @@
                         "mac" : "cc:37:ab:7c:bf:ee",
                         "interface" : "ma1",
                         "address" : "10.2.30.2"
+                    },
+                    "fabric" : {
+                        "of-datapath-id" : "0x0000000000000012"
                     }
                 }
             },
@@ -253,6 +259,10 @@
                         "mac" : "cc:37:ab:7c:b9:d6",
                         "interface" : "ma1",
                         "address" : "10.2.20.1"
+                    },
+                    "fabric" : {
+                        "of-datapath-id" : "0x0000000000000021",
+                        "gateway" : "10.3.1.254/24"
                     }
                 }
             },
@@ -266,6 +276,10 @@
                         "mac" : "cc:37:ab:7c:ba:da",
                         "interface" : "ma1",
                         "address" : "10.2.20.2"
+                    },
+                    "fabric" : {
+                        "of-datapath-id" : "0x0000000000000022",
+                        "gateway" : "10.3.2.254/24"
                     }
                 }
             },
@@ -288,12 +302,14 @@
                         {
                             "interface" : "p1p1",
                             "mac" : "68:05:ca:30:00:f8",
-                            "address" : "10.3.1.1"
+                            "address" : "10.3.1.1",
+                            "enabled" : true
                         },
                         {
                             "interface" : "p1p2",
                             "mac" : "68:05:ca:30:00:f9",
-                            "address" : "10.3.1.2"
+                            "address" : "10.3.1.x",
+                            "enabled" : false
                         }
                     ]
                 }
@@ -305,7 +321,7 @@
                 "networks" : {
                     "management" : {
                         "mac" : "00:25:90:fa:5f:78",
-                        "interface" : "eth0",
+                        "interface" : "eth2",
                         "address" : "10.2.0.2"
                     },
                     "power" : {
@@ -316,12 +332,14 @@
                         {
                             "interface" : "eth0",
                             "mac" : "68:05:ca:30:05:38",
-                            "address" : "10.3.2.1"
+                            "address" : "10.3.1.x",
+                            "enabled" : false
                         },
                         {
                             "interface" : "eth1",
                             "mac" : "68:05:ca:30:05:39",
-                            "address" : "10.3.2.2"
+                            "address" : "10.3.1.2",
+                            "enabled" : true
                         }
                     ]
                 }
@@ -333,7 +351,7 @@
                 "networks" : {
                     "management" : {
                         "mac" : "00:25:90:fa:5f:52",
-                        "interface" : "eth0",
+                        "interface" : "eth2",
                         "address" : "10.2.0.3"
                     },
                     "power" : {
@@ -344,12 +362,14 @@
                         {
                             "interface" : "eth0",
                             "mac" : "68:05:ca:30:00:38",
-                            "address" : "10.3.3.1"
+                            "address" : "10.3.2.1",
+                            "enabled" : true
                         },
                         {
                             "interface" : "eth1",
                             "mac" : "68:05:ca:30:00:39",
-                            "address" : "10.3.3.2"
+                            "address" : "10.3.2.x",
+                            "enabled" : false
                         }
                     ]
                 }
@@ -361,7 +381,7 @@
                 "networks" : {
                     "management" : {
                         "mac" : "00:25:90:fa:5f:4e",
-                        "interface" : "eth0",
+                        "interface" : "eth2",
                         "address" : "10.2.0.4"
                     },
                     "power" : {
@@ -372,12 +392,14 @@
                         {
                             "interface" : "eth0",
                             "mac" : "68:05:ca:30:03:70",
-                            "address" : "10.3.4.1"
+                            "address" : "10.3.2.2",
+                            "enabled" : true
                         },
                         {
                             "interface" : "eth1",
                             "mac" : "68:05:ca:30:02:71",
-                            "address" : "10.3.4.2"
+                            "address" : "10.3.2.x",
+                            "enabled" : false
                         }
                     ]
                 }
@@ -386,22 +408,22 @@
         "links" : [
             {
                 "a" : "top-or-rack-2/0",
-                "b" : "cord-r2-s1/p255p1",
+                "b" : "cord-r2-s1/em1",
                 "type" : "eth"
             },
             {
                 "a" : "top-or-rack-2/1",
-                "b" : "cord-r2-s2/eth0",
+                "b" : "cord-r2-s2/eth2",
                 "type" : "eth"
             },
             {
                 "a" : "top-or-rack-2/2",
-                "b" : "cord-r2-s3/eth0",
+                "b" : "cord-r2-s3/eth2",
                 "type" : "eth"
             },
             {
                 "a" : "top-or-rack-2/3",
-                "b" : "cord-r2-s4/eth0",
+                "b" : "cord-r2-s4/eth2",
                 "type" : "eth"
             },
             {
