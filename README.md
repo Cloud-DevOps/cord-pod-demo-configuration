@@ -42,6 +42,7 @@ __NOTE:__ _only a single instance of the fabric can be run at a time, thus if mu
 2. Clear and reset the ONOS segment routing configuration.
     - If ONOS isn't running, start it up. You should be using the latest version of ONOS, off the `master` branch, `cloned` and built from `https://gerrit.onosproject.org/onos`.
     - Verify that the required applications for segement routing have been activated using the `apps -a -s` command at the ONOS prompt.
+
         ```
         onos> apps -a -s
         *   9 org.onosproject.lldpprovider         1.5.0.SNAPSHOT ONOS LLDP link provider.
@@ -51,6 +52,7 @@ __NOTE:__ _only a single instance of the fabric can be run at a time, thus if mu
         *  41 org.onosproject.drivers              1.5.0.SNAPSHOT Default device drivers
         *  56 org.onosproject.segmentrouting       1.5.0.SNAPSHOT Segment routing application.
         ```
+
     If the applications are not activated, they can be activated with the command `app activate <name>`.
     - Delete any existing network configuration from ONOS. This can be done via the command `curl -slL -X DELETE --header "Accept: application/json" "http://karaf:karaf@localhost:8181/onos/v1/network/configuration"`. _You may have to replace the username/password credentials and hostname in the curl command to fit your environment._
     - Verify the configuration was removed via `curl -sLl -X GET --header "Accept: application/json" "http://karaf:karaf@localhost:8181/onos/v1/network/configuration"`.
