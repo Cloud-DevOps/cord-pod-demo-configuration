@@ -71,11 +71,6 @@
                             "interface" : "p6p1",
                             "mac" : "68:05:ca:30:04:88",
                             "address" : "10.4.1.1"
-                        },
-                        {
-                            "interface" : "p6p2",
-                            "mac" : "68:05:ca:30:04:89",
-                            "address" : "10.4.1.2"
                         }
                     ]
                 }
@@ -99,12 +94,7 @@
                         {
                             "interface" : "eth2",
                             "mac" : "68:05:ca:30:00:00",
-                            "address" : "10.4.2.1"
-                        },
-                        {
-                            "interface" : "eth3",
-                            "mac" : "68:05:ca:30:00:01",
-                            "address" : "10.4.2.2"
+                            "address" : "10.4.1.2"
                         }
                     ]
                 }
@@ -127,13 +117,8 @@
                     "fabric" : [
                         {
                             "interface" : "eth2",
-                            "mac" : "i68:05:ca:30:03:99",
-                            "address" : "10.4.3.1"
-                        },
-                        {
-                            "interface" : "eth3",
-                            "mac" : "68:05:ca:30:03:99",
-                            "address" : "10.4.3.2"
+                            "mac" : "3c:fd:fe:9e:97:d9",
+                            "address" : "10.4.1.3"
                         }
                     ]
                 }
@@ -157,12 +142,7 @@
                         {
                             "interface" : "eth2",
                             "mac" : "68:05:ca:30:05:60",
-                            "address" : "10.4.4.1"
-                        },
-                        {
-                            "interface" : "eth3",
-                            "mac" : "68:05:ca:30:00:01",
-                            "address" : "10.4.4.2"
+                            "address" : "10.4.1.4"
                         }
                     ]
                 }
