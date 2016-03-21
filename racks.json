@@ -281,15 +281,9 @@
                     "fabric" : [
                         {
                             "interface" : "p1p1",
-                            "mac" : "68:05:ca:30:00:f8",
+                            "mac" : "3c:fd:fe:9e:93:10",
                             "address" : "10.3.1.1",
                             "enabled" : true
-                        },
-                        {
-                            "interface" : "p1p2",
-                            "mac" : "68:05:ca:30:00:f9",
-                            "address" : "10.3.1.x",
-                            "enabled" : false
                         }
                     ]
                 }
