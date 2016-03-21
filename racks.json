@@ -271,7 +271,7 @@
                 "networks" : {
                     "management" : {
                         "mac" : "00:25:90:fa:5f:58",
-                        "interface" : "em1:1",
+                        "interface" : "eth2:1",
                         "address" : "10.2.0.1"
                     },
                     "power" : {
@@ -280,7 +280,7 @@
                     },
                     "fabric" : [
                         {
-                            "interface" : "p1p1",
+                            "interface" : "eth0",
                             "mac" : "3c:fd:fe:9e:93:10",
                             "address" : "10.3.1.1",
                             "enabled" : true
@@ -305,15 +305,15 @@
                     "fabric" : [
                         {
                             "interface" : "eth0",
-                            "mac" : "68:05:ca:30:05:38",
-                            "address" : "10.3.1.x",
-                            "enabled" : false
+                            "mac" : "3c:fd:fe:9e:8a:88",
+                            "address" : "10.3.1.1",
+                            "enabled" : true
                         },
                         {
                             "interface" : "eth1",
-                            "mac" : "68:05:ca:30:05:39",
-                            "address" : "10.3.1.2",
-                            "enabled" : true
+                            "mac" : "3c:fd:fe:9e:8a:89",
+                            "address" : "10.3.1.x",
+                            "enabled" : false
                         }
                     ]
                 }
@@ -335,13 +335,13 @@
                     "fabric" : [
                         {
                             "interface" : "eth0",
-                            "mac" : "68:05:ca:30:00:38",
+                            "mac" : "3c:fd:fe:9e:94:98",
                             "address" : "10.3.2.1",
                             "enabled" : true
                         },
                         {
                             "interface" : "eth1",
-                            "mac" : "68:05:ca:30:00:39",
+                            "mac" : "3c:fd:fe:9e:94:99",
                             "address" : "10.3.2.x",
                             "enabled" : false
                         }
@@ -365,13 +365,13 @@
                     "fabric" : [
                         {
                             "interface" : "eth0",
-                            "mac" : "68:05:ca:30:03:70",
+                            "mac" : "3c:fd:fe:9e:97:98",
                             "address" : "10.3.2.2",
                             "enabled" : true
                         },
                         {
                             "interface" : "eth1",
-                            "mac" : "68:05:ca:30:02:71",
+                            "mac" : "3c:fd:fe:9e:97:99",
                             "address" : "10.3.2.x",
                             "enabled" : false
                         }
